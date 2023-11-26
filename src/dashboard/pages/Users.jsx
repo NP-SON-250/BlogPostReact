@@ -25,7 +25,7 @@ export const Users = () => {
             <h1 className="title">User's Information</h1>
           </div>
           <div className="search-form">
-            <input type="text" placeholder="search..." />
+            <input type="text" placeholder="search..." id="inputs"/>
             <button className="user-search-btn">
               <iconify-icon icon="ion:search-outline"></iconify-icon>
             </button>

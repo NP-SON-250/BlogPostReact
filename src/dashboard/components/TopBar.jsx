@@ -1,35 +1,43 @@
-import { useState } from "react";
-import avatar from "../components/images/avatar.webp";
+import { Link } from "react-router-dom";
+import Admins from "../../components/AdminNav";
 import "./style/topbar.css";
-import CreatePost from "./createpost";
 
 const TopBar = () => {
-  const [openModal, setOpenModal] = useState(false);
   return (
     <>
-      <div className="topbar">
-        <div className="left-section">
-        <h1>Vist Me<span className="span"> Daily</span>.</h1>
+      <nav>
+        <Link to="/dashboard" className="tag logo">
+          <h1>Vist Me<span className="span"> Daily</span>.</h1>
+          </Link>
+        <div>
+        <ul id="navbar">
+          <li>
+        <Link to="/dashboard">
+        <div className="tag active">
+          <div className="tag active">Dashboard</div>
         </div>
-        <div className="middle-section">
-          <input type="text" className="search-bar" placeholder="search" />
-          <button className="search-btn">
-            <iconify-icon icon="ion:search-outline"></iconify-icon>
-          </button>
-          <div
-            className="newpost-btn"
-            onClick={() => {
-              setOpenModal(true);
-            }}
-          >
-            New post
-            <span className="plus-icon">
-              <iconify-icon icon="icons8:plus"></iconify-icon>
-            </span>
-          </div>
+      </Link>
+      </li>
+      <li>
+      <Link to="/post">
+        <div className="tag">
+          <div className="tag">Post</div>
         </div>
-      </div>
-      {openModal && <CreatePost closeModal={setOpenModal} />}
+      </Link>
+      </li>
+      <li>
+      <Link to="/users">
+        <div className="tag">
+          <div className="tag">Users</div>
+        </div>
+      </Link>
+      </li>
+          </ul>
+        </div>
+        <div className="getmenu">
+        <Admins/>
+        </div>
+        </nav>
     </>
   );
 };

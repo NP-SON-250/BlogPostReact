@@ -15,7 +15,7 @@ const DashLayout = () => {
   return (
     <div>
       <TopBar />
-      <Outlet />
+      <Outlet /> 
       <SideBar />
     </div>
   );

@@ -67,29 +67,6 @@ export default function Team() {
               <h2 class="">Happy Clients</h2>
             </div>
           </div>
-          {/* <div className="testimony-stage">
-            <div className="testimony-box">
-              <div className="testimony-text">
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-              </div>
-              <div className="testimony-footer">
-                <div className="testimony-avatar">
-                  <img src="" alt="" />
-                </div>
-                <div className="testimony-avatar-">
-                  <div className="Testimony-user">
-                    <h4>Roger Scott</h4>
-                  </div>
-                  <div className="user-position">
-                    <p>Marketing Manager</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </>

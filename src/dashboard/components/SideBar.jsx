@@ -1,50 +1,24 @@
+import { useState } from "react";
 import "./style/sidebar.css";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import CreatePost from "./createpost";
 const SideBar = () => {
-  const navigate = useNavigate();
+  const [openModal, setOpenModal] = useState(false);
+const navigate = useNavigate();
   return (
     <div className="sidebar">
-      <Link to="/dashboard">
-        <div className="sidebar-link">
-          <div className="sidebar-icon">
-            <iconify-icon icon="ant-design:dashboard-filled"></iconify-icon>
+      <div
+            className="btn login tag"
+            onClick={() => {
+              setOpenModal(true);
+            }}
+          >
+            New post
+            <span className="plus-icon tag">
+              <iconify-icon icon="icons8:plus"></iconify-icon>
+            </span>
           </div>
-          <div className="sidebar-label">Dashboard</div>
-        </div>
-      </Link>
-      <Link to="/post">
-        <div className="sidebar-link">
-          <div className="sidebar-icon">
-            <iconify-icon icon="eos-icons:subscriptions-created"></iconify-icon>
-          </div>
-          <div className="sidebar-label">Post</div>
-        </div>
-      </Link>
-      <Link to="/inbox">
-        <div className="sidebar-link">
-          <div className="sidebar-icon">
-            <iconify-icon icon="ri:inbox-archive-fill"></iconify-icon>
-          </div>
-          <div className="sidebar-label">Inbox</div>
-        </div>
-      </Link>
-      <Link to="/pages">
-        <div className="sidebar-link">
-          <div className="sidebar-icon">
-            <iconify-icon icon="dashicons:admin-page"></iconify-icon>
-          </div>
-          <div className="sidebar-label">Pages</div>
-        </div>
-      </Link>
-      <Link to="/users">
-        <div className="sidebar-link">
-          <div className="sidebar-icon">
-            <iconify-icon icon="clarity:users-solid"></iconify-icon>
-          </div>
-          <div className="sidebar-label">Users</div>
-        </div>
-      </Link>
+          {openModal && <CreatePost closeModal={setOpenModal} />}
       <div
         className="sidebar-link"
         onClick={() => {

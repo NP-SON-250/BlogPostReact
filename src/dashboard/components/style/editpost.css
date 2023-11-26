@@ -1,4 +1,33 @@
 .edit-section {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+.modalContainer{
+  margin-left: 10%;
+  width: 60%;
+}
+@media screen and (max-width: 280px) {
+  
+  .modalContainer h2{
+    font-size: 16px;
+    margin-right: -20px;
+  }
+  .search-form #inputs{
+    width: 135px;
+  }
+  #customers {
+    font-size: 8px;
+  }
+  
+  #customers td,
+  #customers th {
+    padding: 2px 2px;
+    font-weight: 300;
+  }
+  .modalContainer h2{
+    font-size: 8px;
+
+  }
+  
 }

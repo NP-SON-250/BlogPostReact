@@ -108,12 +108,12 @@ function CreatePost({ closeModal }) {
                   placeholder="Post Title"
                 />
               </div>
-              <div>
+              <div className="editor">
                 <CKEditor
+                placeholder={"Enter post descriptions"}
                   editor={ClassicEditor}
                   data={setPost?.postContent}
                   onReady={(editor) => {
-                    // You can store the "editor" and use when it is needed.
                     console.log("Editor is ready to use!", editor);
                   }}
                   name="content"
