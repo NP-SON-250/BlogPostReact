@@ -103,7 +103,53 @@ th {
 .views-label {
   font-weight: 500;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 1024px) {
+  
+  .modal-title h2{
+    font-size: 18px;
+    width: 200px;
+  }
+  .search-form #inputs{
+    width: 135px;
+  }
+  #customers {
+    font-size: 8px;
+  }
+  
+  #customers td,
+  #customers th {
+    padding: 2px 2px;
+    font-weight: 300;
+  }
+  .modalBackground .modalContainer {
+    width: 80%;
+    height: auto;
+    margin-top: 100px;
+    padding: 5px;
+  }
+  .modal-body input[type="text"],
+textarea {
+  margin-top: 5px;
+  width: 100%;
+}
+.editor{
+  width: 100%;
+  height: auto;
+}
+.modal-body{
+  margin-top: 20px;
+}
+#mobile {
+  display: block;
+}
+#mobile i {
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+}
+@media screen and (max-width: 1024px) {
   
   .title-container h1{
     font-size: 10px;

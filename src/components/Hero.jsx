@@ -1,4 +1,5 @@
 import "../components/style/Hero.css";
+import helloImage from "../Images/Hero_image.jpeg"
 import { Link } from "react-router-dom";
 export default function Hero() {
   return (
@@ -6,7 +7,7 @@ export default function Hero() {
       <div id="hero" className="hero-section">
         <div className="container">
           <p>Hello and welcome to Visit MeDaily! 🌟</p>
-          <h1>Vist Me<span className="span"> Daily</span>.</h1>
+          <h1>Visit Me<span className="span"> Daily</span>.</h1>
           <p>
           We're delighted to have you here. Whether you're <br />
           exploring our latest blog posts or seeking valuable <br />
@@ -20,7 +21,7 @@ export default function Hero() {
             </Link>
         </div>
         <div className="image">
-          <img src="../src/Images/Hero_image.jpeg" alt="" />
+          <img src={helloImage} alt="" />
         </div>
       </div>
     </>

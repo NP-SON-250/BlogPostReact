@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="readit">
               <div className="title">
                 <h4 className="mark">
-                Vist Me<span className="span"> Daily</span>.
+                Visit Me<span className="span"> Daily</span>.
                 </h4>
               </div>
               <div className="readit-body">

@@ -11,7 +11,7 @@ class Navbar extends Component {
       <>
         <nav>
           <Link to="/" className="tag logo">
-          <h1>Vist Me<span className="span"> Daily</span>.</h1>
+          <h1>Visit Me<span className="span"> Daily</span>.</h1>
           </Link>
           <div>
             <ul

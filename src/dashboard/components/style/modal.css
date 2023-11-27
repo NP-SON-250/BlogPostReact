@@ -173,5 +173,13 @@ textarea {
 .modal-body{
   margin-top: 20px;
 }
+#mobile {
+  display: block;
+}
+#mobile i {
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
 }
