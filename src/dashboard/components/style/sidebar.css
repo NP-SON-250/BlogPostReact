@@ -1,11 +1,11 @@
 .sidebar {
-  z-index: 100;
   background-color: white;
   position: fixed;
-  top: 73px;
+  top: 70px;
   left: 0;
   bottom: 0;
   border-right: 1px solid rgb(240, 240, 240);
+  
 }
 .btn {
   align-items: center;
@@ -41,4 +41,21 @@
 .sidebar-label {
   color: black;
   font-size: 14px;
+}
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: flex;
+    height: 60px;
+    top: 80px;
+
+  }
+  .btn {
+    margin-top: 10px;
+  }
+  .sidebar-link {
+    flex-direction: row;
+    padding-top: -30%;
+    height: 40px;
+    margin-top: 10px;
+  }
 }

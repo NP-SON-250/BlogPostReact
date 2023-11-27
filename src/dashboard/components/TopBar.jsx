@@ -5,7 +5,7 @@ import "./style/topbar.css";
 const TopBar = () => {
   return (
     <>
-      <nav>
+      <nav id="mynavbar"> 
         <Link to="/dashboard" className="tag logo">
           <h1>Vist Me<span className="span"> Daily</span>.</h1>
           </Link>

@@ -11,21 +11,21 @@ export default function Contact() {
           </div>
           <div className="contact-content">
             <div className="address">
-              <p>Address: 198 West 21th Street, Suite 721 New York NY 10016</p>
+              <p>Address: Buswazi, Rwamagana</p>
             </div>
             <div>
               <p>
-                Phone: <span className="bold">+250 782 977 976</span>
+                Phone: <span className="bold">+250 786731449</span>
               </p>
             </div>
             <div>
               <p>
-                Email: <span className="bold">rurangwaleon10@gmail.com</span>
+                Email: <span className="bold">hakizimanaalexis123@gmail.com</span>
               </p>
             </div>
             <div>
               <p>
-                Website: <span className="bold">www.readit.com</span>
+                Website: <span className="bold">https://vist-me-daily.vercel.app/</span>
               </p>
             </div>
           </div>

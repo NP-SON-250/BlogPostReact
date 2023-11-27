@@ -5,14 +5,17 @@
 }
 .modalContainer{
   margin-left: 10%;
-  width: 60%;
+  width: 100%;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 1024px) {
   
-  .modalContainer h2{
-    font-size: 16px;
-    margin-right: -20px;
+  .modalContainer .modal-title h2{
+    font-size: 18px;
+    margin-right: 20px;
   }
+  .edit-section .modalContainer{
+  background-color: gray;
+}
   .search-form #inputs{
     width: 135px;
   }
@@ -28,6 +31,10 @@
   .modalContainer h2{
     font-size: 8px;
 
+  }
+  .modal-footer{
+    display: flex;
+    flex-direction: column;
   }
   
 }

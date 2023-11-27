@@ -26,6 +26,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 25vh;
 }
 #navbar li {
   list-style: none;
@@ -78,14 +79,14 @@ nav {
   color: var(--heading);
 }
 /* =============== Responsiveness for Navigation Bar ================ */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
   #navbar {
     align-items: flex-start;
     background-color: var(--darkblack);
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: 10vh;
     justify-content: flex-start;
     padding: 40px 0 0 10px;
     position: fixed;
@@ -94,9 +95,6 @@ nav {
     transition: 0.3s ease-in-out;
     width: 200px;
     z-index: 2;
-  }
-  .btn {
-    display: none;
   }
   #navbar.active {
     right: 0px;
@@ -107,11 +105,16 @@ nav {
   #navbar li {
     margin-bottom: 20px;
   }
+  .logo h1{
+    font-size: 14px;
+    margin-top: 18px;
+  }
   #mobile {
     display: block;
   }
   #mobile i {
     font-size: 30px;
+    margin-top: 20px;
     cursor: pointer;
   }
 }
