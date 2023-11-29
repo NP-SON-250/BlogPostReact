@@ -24,8 +24,8 @@ class Navbar extends Component {
                 </Link>
               </li>
               <li>
-                <Link to="/team" className="tag">
-                  Team
+                <Link to="/about" className="tag">
+                  About Me
                 </Link>
               </li>
               <li>

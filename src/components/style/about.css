@@ -110,7 +110,7 @@
 }
 
 /* ================== responsiveness for mobile device ================== */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
   .about-row {
     grid-template-columns: 1fr;
   }
@@ -123,5 +123,8 @@
   }
   .play-btn {
     display: none;
+  }
+  .hero-page-title{
+    font-size: 10px;
   }
 }

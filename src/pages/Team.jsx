@@ -1,6 +1,6 @@
 import HeroPage from "../components/HeroPage";
 import { useState } from "react";
-import video1 from "../Images/Video.jpg";
+import video1 from "../Images/About.webp";
 import "../components/style/about.css";
 export default function Team() {
   const [paragraphy, setParagraphy] = useState(
@@ -25,7 +25,7 @@ export default function Team() {
 
   return (
     <>
-      <HeroPage title={"About"} />
+      <HeroPage title={"About Me"} />
 
       <div className="about-section container">
         <div className="about-row">
@@ -39,7 +39,7 @@ export default function Team() {
           </div>
           <div className="about-info">
             <div className="about-heading">
-              <p className="sub-heading">Welcome to Readit</p>
+              <p className="sub-heading">Visit Me<span className="span"> Daily</span>.</p>
               <h2>We give you the best articles you want.</h2>
               <p className="about-desc">
                 Far far away, behind the word mountains, far from the countries
