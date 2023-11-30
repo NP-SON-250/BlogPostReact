@@ -9,7 +9,7 @@ class Admins extends Component {
   render() {
     return (
       <>
-        <nav>
+        <nav id="trans">
           
           <div>
             <ul
